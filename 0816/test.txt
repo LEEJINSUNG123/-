@@ -1,0 +1,23 @@
+1
+CCBBCBAABC
+CCBABCBCAA
+AACABBACCC
+CACAABCBBA
+CACAACABCB
+CCBAABCABB
+BCCAABBCBB
+CACABCAAAC
+ACABACBCCB
+AACBCBCAAC
+
+
+    # m = size
+    # max_l_g = 0
+    # while m > 0:
+    #     for j in range(100):
+    #         for i in range(100 - m + 1):
+    #             x = pal(arr[j][i:i+m])
+    #             if x:
+    #                 if max_l_g < len(arr[j][i:i+m]):
+    #                     max_l_g = len(arr[j][i:i+m])
+    #     m -= 1

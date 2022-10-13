@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>INDEX</h1>
+  <a href="{% url 'new' %}">[NEW]</a>
+  <hr>
+  {% for movie in movies %}
+    <a href="{% url 'detail' movie.pk %}">{{ movie.title }}</a>
+    <p>{{ movie.score }}</p>
+    <hr>
+
+    {% empty %}
+      <P>글이 없슴돠</P>
+  {% endfor %}
+
+{% endblock content %}
